@@ -16,35 +16,51 @@
             <label for="txtnome">Nome Completo:</label>
             <input type="text" name="nome" id="txtnome">
             <label for="txtemail">Email:</label>
-            <input type="text" name="email" id="Email">
+            <input type="email" name="email" id="txtemail">
             <label for="txtsenha">Senha:</label>
             <input type="password" name="senha" id="txtsenha">
             <label for="txtconfirma">Confirme senha:</label>
-            <input type="password" name="confirme senha" id="txtconfirma">
-            <label for="Idade">Idade:</label>
-            <input type="radio" name="Idade" id="mais de 18 anos">
-            <label for="Idade">Mais de 18 anos</label>
-             <input type="radio" name="Idade" id="mais de 18 anos">
-            <label for="Idade">Menos de 18 anos</label>
-            </fieldset>
+            <input type="password" name="confirmar" id="txtconfirma">
+            <label for="">Idade:</label>
+            <input type="radio" name="Idade" id="rdoAcima18">
+            <label for="rdoAcima18">Acima de 18 anos</label>
+            <input type="radio" name="Idade" id="rdoAbaixo18">
+            <label for="rdoAbaixo18">Abaixo de 18 anos</label>
 
+            </fieldset>
+            <!-- SEGUNDA PARTE -->
             <fieldset>
                 <legend>Perfil</legend>
                 <textarea name="descricao" id="descricao"></textarea>
                 <label for="txtperfil">Perfil Trabalho:</label>
-                <select name="Trabalho" id="Perfil">
+                <select name="trabalho" id="slctrabalho">
+                    <optgroup label="Web">
+                        <option value="frontend_developer">Front-End Developer</option>
+                        <option value="backend_developer">Back-End Developer</option>
+                        <option value="php_developer">PHP Developer</option>
+                    </optgroup>
+                    <optgroup label="Mobile">
+                        <option value="android_developer">Android Developer</option>
+                        <option value="ios_developer">IOS Developer</option>
+                    </optgroup>
+                    <optgroup label="Rede">
+                        <option value="seguranca">Segurança de Dados</option>
+                        <option value="infra">Infra</option>
+                    </optgroup>
+                </select>
+                <!-- <select name="Trabalho" id="Perfil">
                     <option value="FrontEnd">Front-End Developer</option>
                     <option value="BackEnd">Back-End Developer</option>
                     <option value="FullStack">FullStack Developer</option>
-                </select>
-                <label for="interesse">Interesses:</label>
-                <input type="checkbox" name="Programador" id="interesse">
-                <label for="Programador">Programador</label>
+                </select> -->
+                <label for="">Interesses:</label>
+                <input type="checkbox" name="programador" id="chckprogramador" value="interesse_programador">
+                <label for="chckprogramador">Programador</label>
                 <br>
-                <input type="checkbox" name="Design" id="interesse">
-                <label for="Design">Design</label><br>
-                <input type="checkbox" name="Analista" id="interesse">
-                <label for="Analista">Analista</label>
+                <input type="checkbox" name="design" id="chckdesign" value="interesse_design">
+                <label for="chckdesign">Design</label><br>
+                <input type="checkbox" name="analista" id="chckanalista" value="interesse_analista">
+                <label for="chckanalista">Analista</label>
             </fieldset>
             <br>
             <button type="submit">Enviar dados</button>
